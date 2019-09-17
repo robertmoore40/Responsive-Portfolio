@@ -156,6 +156,70 @@ a:hover {
 a:active {
   color: blue;
 }
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: gray;
+  color: gray;
+  text-align: center;
+  border-top: 8px solid #4aaaa5;
+}
+
+
+/* MEDIA QUERIES SECTION */
+
+
+/* On screens that are 980px or less */
+@media screen and (max-width: 980px) {
+  .content1 {
+    width: 90%;
+
+  }
+  }
+}
+
+/* On screens that are 768px or less */
+@media screen and (max-width: 768px) {
+  body {
+  }
+}
+
+/* On screens that are 640 px or less */
+@media screen and (max-width: 640px) {
+  .content1 {
+    width:90%;
+    max-width:640px;
+    height: 800px;
+  }
+
+  .header {
+    width:90%%;
+    position: relative;
+  }
+
+  .title {
+  width:90%
+  background-color:#4aaaa5;
+  border-color:#777777;
+  border-width: 1px;
+  border-style: solid;
+  z-index: 20;
+  position: relative;
+  
+
+  }
+
+img {
+  float:left;
+}
+
+p {
+  text-align: center;
+  width: 90%;
+}
+
 
 
 .footer {
