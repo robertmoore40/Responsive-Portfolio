@@ -1,53 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./assets/css/index.css">
-    <title>index</title>
-    <meta name="viewport" content= "width-device-width, initial-scale=1">
+    <title>Document</title>
+    <style>
+body {
+    text-align:center;
+    background-image: url("assets/images/interlaced.png");
+}
+
+#content{
+    max-width:auto;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(10, minmax(150px,auto));
+}
+
+p {
+    font: 1vw;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    padding: 10px;
+    
+}
+
+img {
+    float:left;
+}
+
+.about-me {
+    font-size: 2vw;
+    color: #4aaaa5;
+    font-weight:bold;
+    padding-top:20px;
+    
+}
+
+
+.one {
+    grid-column:1/16;
+    background-color:white;
+}
+
+.two {
+    grid-column: 1/3;
+    background-color:white; 
+}
+
+.three{
+    grid-column:3/6;
+    background-color:#4aaaa5;
+    color:white;
+    text-align:center;
+    vertical-align:middle;
+    font-size: 2.5vw;
+    overflow:auto;
+    padding:35px;
+    
+}
+
+.four{
+    grid-column:6/12;
+    grid-row:2/2 ;
+    background-color:white;
+}
+.five{
+    grid-column:12/16;
+    grid-row:2/2 ;
+    background-color:white;
+}
+.six{
+    grid-column:1/3;
+    grid-row:3/10 ;
+}
+.seven{
+    grid-column:3/14;
+    grid-row:3/10 ;
+    border-style: solid;
+    border-width: 1px;
+    border-color:black;
+    background-color:white;
+}   
+.eight{
+    grid-column:14/16;
+    grid-row:3/10 ;
+}
+.nine{
+    grid-column:1/16;
+    grid-row:10/11 ;
+    background-color:gray;
+    border-style:solid;
+    border-width:3px;
+    border-color:#4aaaa5;
+}
+
+
+    </style>
 </head>
 <body>
-        
-    <div class="header">
-    <div class="title">
-    <h1>Robert Moore</h1>
-    </div>
-    <h4>
-    <div class="links">
-        <ul>  
-        <li><a href="contact.html">Contact |</a></li>
-        <li><a href="portfolio.html">Portfolio |</a></li>
-        <li><a href="index.html">|  About  |</a></li>
-      </ul>
-    </div>  
-</div>
-      </h4>
-<div class="content1">
-    <div class="About-Me">
-    <strong>
-        About Me
-    </strong>    
-    </div>
-    <hr>
-    <br>
-    <p>
-    <img src="assets/images/suited.jpg" alt="Rob in a suit"
-    style="widows: 225px;px;height:295px;"> 
-        Hi! My name is Robert Moore. I grew up in Chapel Hill, NC, and I presently live in RTP/Durham, NC. </p>
 
-        <p>During high school I had an education focusing more on classic latin and history. While in school I excelled in chemistry and math, and ended up going to NC State University in Raleigh studying chemical engineering. 
-            </p>
-           <p> My career as of yet has spanned through polymer manufacturing and polymer research, as well as specialty materials R/D and QA. I'm excited to learn software to have a more full and rounded education with the capability to interact with computers in a meaningful way. 
-            </p>
-           <p> In my free time I enjoy bodybuilding, reading, cooking, and language learning. My best languages after English are Russian and Hungarian. I also like watching Canes hockey and No-limit Texas Hold'em.
-    </p>
-</div>
-
-<div class="footer">
-        <p>Footer</p>
+    <div id="content">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"> 
+            <strong>
+            Robert Moore
+        </strong>
         </div>
+        <div class="four"></div>
+        <div class="five">
+                <div class="links">
+                        <ul>  
+                        <li><a href="contact.html">Contact |</a></li>
+                        <li><a href="portfolio.html">Portfolio |</a></li>
+                        <li><a href="index.html">|  About  |</a></li>
+                      </ul>
+                    </div> 
+
+        </div>
+        <div class="six"></div>
+        <div class="seven">
+               <div class="about-me">
+                   About Me
+               </div> 
+            <br>
+            <hr>
+            
+            <p>
+                        <img src="assets/images/suited.jpg" alt="Rob in a suit"
+                        style="widows: 225px;px;height:295px;"> 
+                            Hi! My name is Robert Moore. I grew up in Chapel Hill, NC, and I presently live in RTP/Durham, NC. </p>
+                    
+                            <p>During high school I had an education focusing more on classic latin and history. While in school I excelled in chemistry and math, and ended up going to NC State University in Raleigh studying chemical engineering. 
+                                </p>
+                               <p> My career as of yet has spanned through polymer manufacturing and polymer research, as well as specialty materials R/D and QA. I'm excited to learn software to have a more full and rounded education with the capability to interact with computers in a meaningful way. 
+                                </p>
+                               <p> In my free time I enjoy bodybuilding, reading, cooking, and language learning. My best languages after English are Russian and Hungarian. I also like watching Canes hockey and No-limit Texas Hold'em.
+                        </p>
+        </div>
+        <div class="eight"></div>
+        <div class="nine"></div>
+    </div>
+    
 </body>
 </html>
