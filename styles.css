@@ -6,6 +6,7 @@
 body {
     text-align:center;
     background-image: url("assets/images/interlaced.png");
+    margin:0;
 }
 
 #content{
@@ -67,7 +68,7 @@ li a {
     top: 206px;
     float:left;
     }
-  .pal1{
+.pal1{
     position: relative;
     top: 20px;
   }
@@ -205,6 +206,8 @@ li a {
     .five {
         grid-column:1/16;
         grid-row:3/5;
+        text-align:center;
+        vertical-align:middle;
     }
     .six {
         grid-column:none;
